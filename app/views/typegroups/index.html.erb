@@ -1,0 +1,25 @@
+<h1>Listing typegroups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @typegroups.each do |typegroup| %>
+      <tr>
+        <td><%= link_to 'Show', typegroup %></td>
+        <td><%= link_to 'Edit', edit_typegroup_path(typegroup) %></td>
+        <td><%= link_to 'Destroy', typegroup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Complaint', new_typegroup_path %>

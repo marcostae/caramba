@@ -1,0 +1,33 @@
+<%= form_for(@type) do |f| %>
+  <% if @type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@type.errors.count, "error") %> prohibited this type from being saved:</h2>
+
+      <ul>
+      <% @type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+<!--     <%= f.label :user_id %>:
+    <%= f.text_field :user_id %><br>
+
+    <%= f.label :type_id %>:
+    <%= f.text_field :type_id %><br>
+
+    <%= f.label :type_id %>:
+    <%= f.text_field :type_id %><br>
+
+    <%= f.label :photo %>:
+    <%= f.text_field :photo %><br>
+
+    <%= f.label :comment %>:
+    <%= f.text_field :comment %><br> -->
+
+
+    <%= f.submit %>
+  </div>
+<% end %>

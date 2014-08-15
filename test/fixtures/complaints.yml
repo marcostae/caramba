@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  typegroup_id: 1
+  type_id: 1
+  photo: MyString
+  comment: MyString
+
+two:
+  user_id: 1
+  typegroup_id: 1
+  type_id: 1
+  photo: MyString
+  comment: MyString

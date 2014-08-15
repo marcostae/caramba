@@ -1,3 +1,4 @@
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -5,3 +6,68 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+type_group = Typegroup.create(name: "Água / Saúde Pública / Higiene")
+Type.create(name: "Area de enchente", typegroup: type_group)
+Type.create(name: "Pedintes", typegroup: type_group)
+Type.create(name: "Vazamento", typegroup: type_group)
+Type.create(name: "Esgoto a ceu aberto", typegroup: type_group)
+Type.create(name: "Falta de agua", typegroup: type_group)
+Type.create(name: "Foco de dengue", typegroup: type_group)
+Type.create(name: "Terreno baldio", typegroup: type_group)
+
+type_group = Typegroup.create(name: "Poluição / Vandalismo")
+Type.create(name: "Pixacao", typegroup: type_group)
+Type.create(name: "Mau cheiro", typegroup: type_group)
+Type.create(name: "Praia suja", typegroup: type_group)
+Type.create(name: "Mictorio a ceu aberto", typegroup: type_group)
+Type.create(name: "Barulho", typegroup: type_group)
+Type.create(name: "Lixo", typegroup: type_group)
+
+type_group = Typegroup.create(name: "Infraestrutura")
+Type.create(name: "Mato crescendo nas calçadas", typegroup: type_group)
+Type.create(name: "Buraco na rua", typegroup: type_group)
+Type.create(name: "Sem sinal de celular", typegroup: type_group)
+Type.create(name: "Orelhão quebrado", typegroup: type_group)
+Type.create(name: "Placa quebrada", typegroup: type_group)
+Type.create(name: "Pavimentação", typegroup: type_group)
+Type.create(name: "Obra parada", typegroup: type_group)
+Type.create(name: "Acessibilidade", typegroup: type_group)
+Type.create(name: "Árvore caída na rua / calçada", typegroup: type_group)
+Type.create(name: "Falta de caminho acessível", typegroup: type_group)
+Type.create(name: "Falta de poda de árvore", typegroup: type_group)
+
+type_group = Typegroup.create(name: "Postes / Iluminação / Fiação / Eletricidade")
+Type.create(name: "Fiação inapropriada (gato)", typegroup: type_group)
+Type.create(name: "Poste torto / quebrado", typegroup: type_group)
+Type.create(name: "Poste sem energia", typegroup: type_group)
+Type.create(name: "Fiação telefônica danificada", typegroup: type_group)
+Type.create(name: "Queda de energia", typegroup: type_group)
+
+type_group = Typegroup.create(name: "Criminalidade")
+Type.create(name: "Assaltos frequentes", typegroup: type_group)
+Type.create(name: "Drogas", typegroup: type_group)
+Type.create(name: "Furto", typegroup: type_group)
+Type.create(name: "Moradores de rua", typegroup: type_group)
+Type.create(name: "Comércio ilegal", typegroup: type_group)
+Type.create(name: "Exploração Sexual", typegroup: type_group)
+Type.create(name: "Flanelinhas", typegroup: type_group)
+
+type_group = Typegroup.create(name: "Trânsito / Mobilidade")
+Type.create(name: "Veículo abandonado", typegroup: type_group)
+Type.create(name: "Ponto de ônibus quebrado", typegroup: type_group)
+Type.create(name: "Estacionamento", typegroup: type_group)
+Type.create(name: "Semáforo quebrado / Irregular", typegroup: type_group)
+Type.create(name: "Falta de sinalização / placas", typegroup: type_group)
+Type.create(name: "Falta de faixa de pedestres", typegroup: type_group)
+Type.create(name: "Ônibus demorando demais", typegroup: type_group)
+Type.create(name: "Veículo abandonado", typegroup: type_group)
+Type.create(name: "Trânsito todo dia", typegroup: type_group)
+Type.create(name: "Semáforo dessincronizado", typegroup: type_group)
+Type.create(name: "Via obstruida", typegroup: type_group)
+
+User.create(name: "Hodoufo", email:"hodoufo@psp.com")
+User.create(name: "Nihil", email:"nihil@psp.com")
+User.create(name: "Bactac", email:"bactac@psp.com")
+User.create(name: "Didi", email:"didi@psp.com")
+User.create(name: "Ito", email:"ito@psp.com")
