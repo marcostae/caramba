@@ -16,8 +16,8 @@
     <% @complaints.each do |complaint| %>
       <tr>
         <td><%= complaint.id %></td>
-        <td><%= complaint.user.id %></td>
-        <td><%= complaint.typegroup.name %></td>
+        <td><%= complaint.user.name %></td>
+        <td><%= #complaint.typegroup.name %></td>
         <td><%= complaint.type.name %></td>
         <td><%= complaint.photo %></td>
         <td><%= complaint.comment %></td>
