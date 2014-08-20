@@ -1,6 +1,8 @@
 class ComplaintsController < ApplicationController
   before_action :set_complaint, only: [:show, :edit, :update, :destroy]
 
+  protect_from_forgery :except => :create
+
   # GET /complaints
   # GET /complaints.json
   def index
