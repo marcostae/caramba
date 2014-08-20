@@ -79,7 +79,7 @@ class ComplaintsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def complaint_params
-      # params.require(:complaint).permit(:user_id, :typegroup_id, :type_id, :photo, :comment, :latitude, :longitude)
-      params[:complaint]
+      params.require(:complaint).permit(:user_id, :typegroup_id, :type_id, :photo, :comment, :latitude, :longitude)
+      # params[:complaint]
     end
 end
