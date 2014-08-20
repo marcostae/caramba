@@ -1,6 +1,6 @@
 class ComplaintsController < ApplicationController
   before_action :set_complaint, only: [:show, :edit, :update, :destroy]
-  
+
   protect_from_forgery :except => :create
 
   # GET /complaints
@@ -79,7 +79,7 @@ class ComplaintsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def complaint_params
-      params.require(:complaint).permit(:user_id, :typegroup_id, :type_id, :photo, :comment, :latitude, :longitude)
+      params.permit(:user_id, :typegroup_id, :type_id, :photo, :comment, :latitude, :longitude)
       # params[:complaint]
     end
 end
