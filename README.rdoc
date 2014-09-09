@@ -1,9 +1,29 @@
-== README
+== CARAMBA/COMBINI
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Olá! Bem vindo ao Caramba/Combini. Projeto de Formatura de Marcos, Octavio e Rodolfo para o curso de Engenharia de Computação na Poli/USP no final de 2014.
 
-Things you may want to cover:
+Abaixo temos um disclaimer com o status do projeto, com uma lista de próximas pendências.
+
+= Para o primeiro teste
+
+* Finalizar a interface mobile que se conecta (mesmo que através do PHP) com o servidor no heroku
+
+* Testar com alguns usuários (João, Chaud, Didi, Ito)
+
+= Para a versão final
+
+* Acertar interface mobile (temos as telas desenhadas, mas não implementadas)
+
+* Implementar uma interface mobile sem funcionalidade, mas com design.
+
+* Implementar os webservices. A listagem de todos está sendo feita neste momento.
+
+* Justificar os elementos de gamefication que escolhemos.
+
+* Realizar a integração
+
+* Fazer ajustes
+
 
 * Ruby version
 
