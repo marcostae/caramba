@@ -4,13 +4,13 @@ Olá! Bem vindo ao Caramba/Combini. Projeto de Formatura de Marcos, Octavio e Ro
 
 Abaixo temos um disclaimer com o status do projeto, com uma lista de próximas pendências.
 
-= Para o primeiro teste
+=== Para o primeiro teste
 
 * Finalizar a interface mobile que se conecta (mesmo que através do PHP) com o servidor no heroku
 
 * Testar com alguns usuários (João, Chaud, Didi, Ito)
 
-= Para a versão final
+=== Para a versão final
 
 * Acertar interface mobile (temos as telas desenhadas, mas não implementadas)
 
