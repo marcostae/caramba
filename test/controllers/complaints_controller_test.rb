@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class ComplaintsControllerTest < ActionController::TestCase
+class combinisControllerTest < ActionController::TestCase
   setup do
-    @complaint = complaints(:one)
+    @combini = combinis(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:complaints)
+    assert_not_nil assigns(:combinis)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class ComplaintsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create complaint" do
-    assert_difference('Complaint.count') do
-      post :create, complaint: {  }
+  test "should create combini" do
+    assert_difference('combini.count') do
+      post :create, combini: {  }
     end
 
-    assert_redirected_to complaint_path(assigns(:complaint))
+    assert_redirected_to combini_path(assigns(:combini))
   end
 
-  test "should show complaint" do
-    get :show, id: @complaint
+  test "should show combini" do
+    get :show, id: @combini
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @complaint
+    get :edit, id: @combini
     assert_response :success
   end
 
-  test "should update complaint" do
-    patch :update, id: @complaint, complaint: {  }
-    assert_redirected_to complaint_path(assigns(:complaint))
+  test "should update combini" do
+    patch :update, id: @combini, combini: {  }
+    assert_redirected_to combini_path(assigns(:combini))
   end
 
-  test "should destroy complaint" do
-    assert_difference('Complaint.count', -1) do
-      delete :destroy, id: @complaint
+  test "should destroy combini" do
+    assert_difference('combini.count', -1) do
+      delete :destroy, id: @combini
     end
 
-    assert_redirected_to complaints_path
+    assert_redirected_to combinis_path
   end
 end

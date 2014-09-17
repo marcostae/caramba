@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class combiniTest < ActiveSupport::TestCase
+class ProductCategoryTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
