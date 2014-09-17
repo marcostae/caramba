@@ -2,10 +2,8 @@
 
 one:
   user_id: 1
-  combini_id: 1
-  like: false
+  achievement_id: 1
 
 two:
   user_id: 1
-  combini_id: 1
-  like: false
+  achievement_id: 1

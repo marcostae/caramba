@@ -1,10 +1,10 @@
-<%= form_for(@complaint) do |f| %>
-  <% if @complaint.errors.any? %>
+<%= form_for(@combini) do |f| %>
+  <% if @combini.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@complaint.errors.count, "error") %> prohibited this complaint from being saved:</h2>
+      <h2><%= pluralize(@combini.errors.count, "error") %> prohibited this combini from being saved:</h2>
 
       <ul>
-      <% @complaint.errors.full_messages.each do |msg| %>
+      <% @combini.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

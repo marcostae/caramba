@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'rails-erd'
+
 gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password

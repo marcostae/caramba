@@ -1,0 +1,34 @@
+<h1>Listing combinis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>User</th>
+      <th>TypeGroup</th>
+      <th>Type</th>
+      <th>Photo</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @combinis.each do |combini| %>
+      <tr>
+        <td><%= combini.id %></td>
+        <td><%= combini.user.name %></td>
+        <td><%= combini.typegroup.name %></td>
+        <td><%= combini.type.name %></td>
+        <td><%= combini.photo %></td>
+        <td><%= combini.comment %></td>
+        <td><%= link_to 'Show', combini %></td>
+        <td><%= link_to 'Edit', edit_combini_path(combini) %></td>
+        <td><%= link_to 'Destroy', combini, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New combini', new_combini_path %>

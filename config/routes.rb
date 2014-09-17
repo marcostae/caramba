@@ -1,7 +1,7 @@
 Porra::Application.routes.draw do
 
   root 'welcome#index'
-  resources :complaints
+  resources :combinis
   resources :typegroups
   resources :types
   resources :users

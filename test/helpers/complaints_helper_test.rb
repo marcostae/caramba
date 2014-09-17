@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class ComplaintsHelperTest < ActionView::TestCase
+class combinisHelperTest < ActionView::TestCase
 end

@@ -2,10 +2,10 @@
 
 one:
   user_id: 1
-  combini_id: 1
-  like: false
+  product_id: 1
+  activated: false
 
 two:
   user_id: 1
-  combini_id: 1
-  like: false
+  product_id: 1
+  activated: false
