@@ -2,9 +2,13 @@ Porra::Application.routes.draw do
 
   root 'welcome#index'
   resources :combinis
-  resources :typegroups
+  resources :typegroups do
+    resources :combinis
+  end
   resources :types
-  resources :users
+  resources :users do
+    post 'login'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

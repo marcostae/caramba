@@ -13,6 +13,14 @@ class UsersController < ApplicationController
   #end
 
   def login
+    @valid_users = User.where(email: params[:email], password: params[:password])
+    respond_to do |f|
+      if @valid_users.count == 1
+        f.json { render json: @valid_users.take}
+      else
+        f.json {  render json: @valid_users, status: :unprocessable_entity }
+      end
+    end
   end
 
   # GET /users/1
