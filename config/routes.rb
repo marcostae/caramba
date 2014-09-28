@@ -7,7 +7,9 @@ Porra::Application.routes.draw do
   end
   resources :types
   resources :users do
-    post 'login'
+    collection do
+      post 'login'
+    end
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
