@@ -7,8 +7,12 @@
       <th>User</th>
       <th>TypeGroup</th>
       <th>Type</th>
-      <th>Photo</th>
+      <th>Neighborhood</th>
+      <th>Name</th>
       <th>Comment</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Quality Rank</th>
     </tr>
   </thead>
 
@@ -19,8 +23,13 @@
         <td><%= combini.user.name %></td>
         <td><%= combini.typegroup.name %></td>
         <td><%= combini.type.name %></td>
-        <td><%= combini.photo %></td>
+        <td><%= combini.neighborhood.name %></td>
+        <td><%= combini.name %></td>
         <td><%= combini.comment %></td>
+        <td><%= combini.latitude %></td>
+        <td><%= combini.longitude %></td>
+        <td><%= combini.quality_rank %></td>
+
         <td><%= link_to 'Show', combini %></td>
         <td><%= link_to 'Edit', edit_combini_path(combini) %></td>
         <td><%= link_to 'Destroy', combini, method: :delete, data: { confirm: 'Are you sure?' } %></td>
