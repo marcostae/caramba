@@ -6,7 +6,7 @@ Porra::Application.routes.draw do
     resources :combinis
   end
   resources :types
-  post '/users/login', to: 'users#login'
+  post '/login', to: 'users#login'
   
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
