@@ -1,5 +1,5 @@
 class ChangeComplaintsToCombinis < ActiveRecord::Migration
   def change
-  	rename_table :complaints, :combinis
+  	rename_table :combinis, :complaints
   end
 end
