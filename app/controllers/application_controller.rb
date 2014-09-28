@@ -26,5 +26,5 @@ class ApplicationController < ActionController::Base
 #      headers['Access-Control-Max-Age'] = '1728000'
 #      render :text => '', :content_type => 'text/plain'
 #    end
-  end
+#  end
 end
