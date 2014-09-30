@@ -79,7 +79,7 @@ class CombinisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def combini_params
-      params.require(:combini).permit(:user_id, :typegroup_id, :type_id, :neighborhood_id, :name, :comment, :latitude, :longitude, :quality_rank)
-      # params[:combini]
+      #params.require(:combini).permit(:user_id, :typegroup_id, :type_id, :neighborhood_id, :name, :comment, :latitude, :longitude, :quality_rank)
+      params
     end
 end
